@@ -63,7 +63,7 @@ export default function Navbar() {
 
 function NavLink({href, children, target,}: {href: string; children: React.ReactNode; target?: string;}) {
   return (
-    <motion.div whileHover={{ x: 10 }} whileTap={{ scale: 1.25 }} transition={{ type: "spring", stiffness: 400 }}>
+    <motion.div whileHover={{ x: 10 }} whileTap={{ scale: 1.25 }} transition={{ type: "spring", stiffness: 200, damping: 10 }}>
       <Link
         href={href}
         target={target}

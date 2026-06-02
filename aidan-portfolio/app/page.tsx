@@ -10,7 +10,6 @@ export default function Home() {
   return (
     <main>
       <Navbar />
-
       <section className="relative h-screen overflow-hidden">
         <iframe
           src="https://my.spline.design/hana3dtextcopycopy-uIXXEcDpyB5yP5yCVGEs9BCI-dhb/"
@@ -20,6 +19,19 @@ export default function Home() {
 
         <div className="pointer-events-none absolute bottom-0 left-0 z-10 h-30 w-full bg-gradient-to-b from-transparent via-slate-900/60 to-slate-900" />
 
+        <motion.div
+          initial={{ opacity: 0, y: -10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{
+            duration: 1,
+            repeat: Infinity,
+            repeatType: "reverse",
+            ease: "easeInOut",
+          }}
+          className="pointer-events-none absolute bottom-8 left-1/2 z-20 -translate-x-1/2 text-1.75xl text-white"
+        >
+          ↓
+        </motion.div>
       </section>
 
       <section className="relative flex min-h-screen flex-col items-center justify-center overflow-hidden text-center">
@@ -54,66 +66,75 @@ export default function Home() {
           </p>
         </section>
 
-        <section ref={constraintsRef} className="pointer-events-none absolute inset-0 z-20 overflow-hidden">
-          <motion.img
-            src="/images/home_images/python.svg"
-            alt="python"
-            width ={100}
-            height={100}
-            drag
-            dragMomentum={true}
-            dragElastic={0.8}
-            dragConstraints={constraintsRef}
-            className="pointer-events-auto absolute right-210 bottom-10 z-50 cursor-grab active:cursor-grabbing"
-          />
+        <section
+          ref={constraintsRef}
+          className="pointer-events-none absolute inset-0 z-20 overflow-hidden"
+        >
+          <div className="absolute bottom-10 left-1/2 z-50 flex -translate-x-1/2 items-center gap-4">
+            <h1 className="pointer-events-none absolute -bottom-6.5 left-1/2 -translate-x-1/2 text-xl text-white">
+              drag me :)
+            </h1>
 
-          <motion.img
-            src="/images/home_images/C++.svg"
-            alt="C++"
-            width ={175}
-            height={175}
-            drag
-            dragMomentum={true}
-            dragElastic={0.8}
-            dragConstraints={constraintsRef}
-            className="pointer-events-auto absolute right-170 bottom-0 z-50 cursor-grab active:cursor-grabbing"
-          />
+            <motion.img
+              src="/images/home_images/javascript.svg"
+              alt="javascript"
+              width={80}
+              height={80}
+              drag
+              dragMomentum={true}
+              dragElastic={0.8}
+              dragConstraints={constraintsRef}
+              className="pointer-events-auto cursor-grab active:cursor-grabbing"
+            />
 
-          <motion.img
-            src="/images/home_images/CSS.svg"
-            alt="CSS"
-            width ={100}
-            height={100}
-            drag
-            dragMomentum={true}
-            dragElastic={0.8}
-            dragConstraints={constraintsRef}
-            className="pointer-events-auto absolute right-150 bottom-10 z-50 cursor-grab active:cursor-grabbing"
-          />
+            <motion.img
+              src="/images/home_images/python.svg"
+              alt="python"
+              width={100}
+              height={100}
+              drag
+              dragMomentum={true}
+              dragElastic={0.8}
+              dragConstraints={constraintsRef}
+              className="pointer-events-auto cursor-grab active:cursor-grabbing"
+            />
 
-          <motion.img
-            src="/images/home_images/javascript.svg"
-            alt="javascript"
-            width ={80}
-            height={80}
-            drag
-            dragMomentum={true}
-            dragElastic={0.8}
-            dragConstraints={constraintsRef}
-            className="pointer-events-auto absolute right-240 bottom-12.5 z-50 cursor-grab active:cursor-grabbing"
-          />
+            <motion.img
+              src="/images/home_images/C++.png"
+              alt="C++"
+              width={80}
+              height={80}
+              drag
+              dragMomentum={true}
+              dragElastic={0.8}
+              dragConstraints={constraintsRef}
+              className="pointer-events-auto cursor-grab active:cursor-grabbing"
+            />
 
-          <motion.img
-            src="/images/home_images/typescript.svg"
-            alt="typescript"
-            width ={80}
-            height={80}
-            drag
-            dragMomentum={true}
-            dragElastic={0.8}
-            dragConstraints={constraintsRef}
-            className="pointer-events-auto absolute right-125 bottom-12.5 z-50 cursor-grab active:cursor-grabbing"
-          />
+            <motion.img
+              src="/images/home_images/CSS.svg"
+              alt="CSS"
+              width={100}
+              height={100}
+              drag
+              dragMomentum={true}
+              dragElastic={0.8}
+              dragConstraints={constraintsRef}
+              className="pointer-events-auto cursor-grab active:cursor-grabbing"
+            />
+
+            <motion.img
+              src="/images/home_images/typescript.svg"
+              alt="typescript"
+              width={80}
+              height={80}
+              drag
+              dragMomentum={true}
+              dragElastic={0.8}
+              dragConstraints={constraintsRef}
+              className="pointer-events-auto cursor-grab active:cursor-grabbing"
+            />
+          </div>
         </section>
       </section>
     </main>
