@@ -169,7 +169,7 @@ export default function Home() {
 
           <ScrollProgressReveal className="absolute left-[430px] top-[200px]">
             <Image
-              src="/images/home_images/gladash.jpg"
+              src="/images/home_images/gladash.JPG"
               alt="Gladash"
               width={550}
               height={550}
