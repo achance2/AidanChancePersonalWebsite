@@ -50,6 +50,20 @@
   --radius-4xl: calc(var(--radius) * 2.6);
 }
 
+.animate-fish {
+  display: inline-block;
+  animation: fishWiggle 2.5s ease-in-out infinite;
+}
+
+@keyframes fishWiggle {
+  0%, 100% {
+    transform: translateX(0) rotate(0deg);
+  }
+  50% {
+    transform: translateX(8px) rotate(-8deg);
+  }
+}
+
 :root {
   --background: oklch(1 0 0);
   --foreground: oklch(0.145 0 0);

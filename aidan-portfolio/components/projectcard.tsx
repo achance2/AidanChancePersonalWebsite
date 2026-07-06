@@ -28,21 +28,21 @@ export default function ProjectCard({
 }: ProjectCardProps) {
   return (
     <Link href={link} className="block">
-      <Card className="border-slate-800 bg-slate-900 text-white">
+      <Card className="bg-black/70 text-white hover:scale-105 transition-transform duration-300 ease-in-out shadow-xl border-2 border-black/50">
         <CardHeader>
-          <div className="flex items-center justify-between gap-4">
+          <div className="flex items-center justify-between gap-4 italic">
             <CardTitle>{title}</CardTitle>
-            <p className="shrink-0 text-sm text-slate-400">{date}</p>
+            <p className="shrink-0 text-sm text-white">{date}</p>
           </div>
 
-          <CardDescription className="text-slate-400">
+          <CardDescription className="text-white italic">
             {skills}
           </CardDescription>
         </CardHeader>
 
         <CardContent className="relative min-h-50">
           <div className="flex items-center gap-6">
-            <p className="pr-52 text-slate-300">{description}</p>
+            <p className="pr-52 text-white">{description}</p>
 
             <Image
               src={image}

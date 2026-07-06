@@ -6,7 +6,7 @@ import Image from "next/image";
 
 export default function Navbar() {
   return (
-    <div className="absolute left-6 top-6 z-[9999]">
+    <div className="absolute left-6 top-6 z-[9999] brightness-0 invert">
       <motion.nav
         initial={{ y: -60, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
@@ -14,48 +14,45 @@ export default function Navbar() {
         className="flex flex-col items-start justify-center gap-4 bg-transparent px-4 py-4 text-white"
       >
         <NavLink href="/">Home</NavLink>
-        <NavLink href="/projects">Projects</NavLink>
+        <NavLink href="/#about">About Me</NavLink>        
+        <NavLink href="/#projects">Projects</NavLink>
         <NavLink href="/images/resume/Resume.pdf" target="_blank">Resume</NavLink>
 
-        <Link href="https://github.com/achance2">
+        <IconLink href="https://github.com/achance2">
           <Image
             src="/images/home_images/github.svg"
             alt="GitHub"
             width={28}
             height={28}
-            className = "invert"
           />
-        </Link>
+        </IconLink>
 
-        <Link href= "https://www.linkedin.com/in/aidan-chance">
+        <IconLink href= "https://www.linkedin.com/in/aidan-chance">
           <Image
             src="/images/home_images/linkedin.svg"
             alt="LinkedIn icon"
             width={28}
             height={28}
-            className = "invert"
           />
-        </Link>
+        </IconLink>
 
-        <Link href= "mailto:adchance2019@gmail.com">
+        <IconLink href= "mailto:adchance2019@gmail.com">
           <Image
             src="/images/home_images/email.svg"
             alt="email icon"
             width={28}
             height={28}
-            className = "invert"
           />
-        </Link>
+        </IconLink>
 
-        <Link href= "tel:+1-346-719-1543">
+        <IconLink href= "tel:+1-346-719-1543">
           <Image
             src="/images/home_images/phone.svg"
             alt="phone icon"
             width={28}
             height={28}
-            className = "invert"
           />
-        </Link>
+        </IconLink>
       </motion.nav>
     </div>
   );
@@ -72,6 +69,16 @@ function NavLink({href, children, target,}: {href: string; children: React.React
         {children}
 
         <span className="absolute -bottom-1 left-0 h-[2px] w-0 bg-white-300 transition-all duration-300 group-hover:w-full" />
+      </Link>
+    </motion.div>
+  );
+}
+
+function IconLink({href, children,}: {href: string; children: React.ReactNode;}) {
+  return (
+    <motion.div whileHover={{ x: 10 }} whileTap={{ scale: 1.25 }} transition={{ type: "spring", stiffness: 200, damping: 10 }}>
+      <Link href={href} target="_blank" className="block">
+        {children}
       </Link>
     </motion.div>
   );
