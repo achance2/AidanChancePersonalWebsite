@@ -154,7 +154,7 @@ export default function Home() {
           <Image src="/images/home_images/airplane.svg" alt="Airplane" width={100} height={100} />
         </motion.div>
         
-        <div className="relative mx-auto h-[2070px] w-full max-w-[1400px]">
+        <div className="relative mx-auto h-[2190px] w-full max-w-[1400px]">
           <ScrollProgressReveal className="absolute -left-10 top-60 h-[1000px] w-[450px]">
             <video
               src="/videos/bouldering.mp4"
@@ -167,6 +167,16 @@ export default function Home() {
             />
           </ScrollProgressReveal>
 
+          <div className="absolute -left-[40px] top-[1055px] w-[450px]">
+            <div className="relative rounded-3xl bg-[#fffdf2] p-5 shadow-2xl">
+              <div className="absolute -top-2 left-20 h-8 w-8 rotate-45 bg-[#fffdf2]" />
+
+              <p className="relative z-10 text-lg leading-7 text-[#24535a]/80">
+                I started bouldering during my 2024 study abroad trip in Seoul, South Korea. Since then, it has become a way for me to challenge myself both physically and mentally. This video shows me sending a project I've been recently working on.
+              </p>
+            </div>
+          </div>
+
           <ScrollProgressReveal className="absolute left-[430px] top-[200px]">
             <Image
               src="/images/home_images/gladash.JPG"
@@ -176,6 +186,16 @@ export default function Home() {
               className="rounded-3xl border-2 border-white/80 object-cover shadow-2xl"
             />
           </ScrollProgressReveal>
+
+          <div className="absolute left-[1000px] top-[300px] w-[450px]">
+            <div className="relative rounded-3xl bg-[#fffdf2] p-5 shadow-2xl">
+              <div className="absolute top-10 -left-2 h-8 w-8 rotate-45 bg-[#fffdf2]" />
+
+              <p className="relative z-10 text-lg leading-7 text-[#24535a]/80">
+                I ran the 2026 Spring Gladiator Dash hosted in Bryan, Texas with my friends. The Gladiator Dash is a 5k that involves overcoming obstacles and swimming. It was fun to work together with my friends to complete it. We all got covered in mud!              
+              </p>
+            </div>
+          </div>
 
           <ScrollProgressReveal className="absolute -right-10 top-[630px]">
             <Image
@@ -187,6 +207,16 @@ export default function Home() {
             />
           </ScrollProgressReveal>
 
+          <div className="absolute left-[425px] top-[750px] w-[450px]">
+            <div className="relative rounded-3xl bg-[#fffdf2] p-5 shadow-2xl">
+              <div className="absolute top-10 left-107 h-8 w-8 rotate-45 bg-[#fffdf2]" />
+
+              <p className="relative z-10 text-lg leading-7 text-[#24535a]/80">
+                This is a picture of me and my friends from our club, the Society of Asian Scientist and Engineers, playing intramural volleyball. We had a lot of fun playing and working together to win. We did lose this game though, but we had a great time!            
+              </p>
+            </div>
+          </div>
+
           <ScrollProgressReveal className="absolute left-130 top-[1400px]">
             <Image
               src="/images/home_images/graduation.jpg"
@@ -197,6 +227,16 @@ export default function Home() {
             />
           </ScrollProgressReveal>
 
+          <div className="absolute left-[525px] top-[1175px] w-[450px]">
+            <div className="relative rounded-3xl bg-[#fffdf2] p-5 shadow-2xl">
+              <div className="absolute top-46 left-80 h-8 w-8 rotate-45 bg-[#fffdf2]" />
+
+              <p className="relative z-10 text-lg leading-7 text-[#24535a]/80">
+                In May 2026, my friend, Nick, graduated from Texas A&M University with a degree in Computer Science. We celeberated his graduation together and cheered him on as he walked across the stage. I wish him the best of luck and I know he will do great things!           
+              </p>
+            </div>
+          </div>
+
           <ScrollProgressReveal className="absolute -left-10 top-[1250px]">
             <Image
               src="/images/home_images/convention.JPG"
@@ -206,6 +246,16 @@ export default function Home() {
               className="rounded-3xl border-2 border-white/80 object-cover shadow-2xl"
             />
           </ScrollProgressReveal>
+
+          <div className="absolute -left-[20px] top-[1685px] w-[500px]">
+            <div className="relative rounded-3xl bg-[#fffdf2] p-5 shadow-2xl">
+              <div className="absolute -top-2 left-20 h-8 w-8 rotate-45 bg-[#fffdf2]" />
+
+              <p className="relative z-10 text-lg leading-7 text-[#24535a]/80">
+                In Fall 2026, all of the SASE officers got the opportunity to attend the SASE national conference in Pittsburgh, Pennsylvania. We had a blast exploring the city and attending the conference with other SASE chapters. During the award ceremony, our chapter won honorable mention for best overall SASE chapter!
+              </p>
+            </div>
+          </div>
 
           <ScrollProgressReveal className="absolute -right-10 top-[1070px] h-[550px] w-[450px]">
             <video
@@ -218,10 +268,20 @@ export default function Home() {
               className="rounded-3xl border-2 border-white/80 bg-black object-cover shadow-2xl"
             />
           </ScrollProgressReveal>
+
+          <div className="absolute left-[1000px] top-[1885px] w-[450px]">
+            <div className="relative rounded-3xl bg-[#fffdf2] p-5 shadow-2xl">
+              <div className="absolute -top-2 left-20 h-8 w-8 rotate-45 bg-[#fffdf2]" />
+
+              <p className="relative z-10 text-lg leading-7 text-[#24535a]/80">
+                In Spring 2026, SASE officers got pied in the face by other members to raise money for Scotty's House, a local charity that helps children affected by abuse. This is a video of me getting pied!
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
-      <section className="relative min-h-[130vh] overflow-hidden bg-[#FFFBE3]" id="projects">
+      <section className="relative min-h-[145vh] overflow-hidden bg-[#FFFBE3]" id="projects">
         <div className="absolute inset-x-0 top-0 z-0 h-400 bg-gradient-to-b from-[#FFFBE3] to-[#EDBBBB]" />
 
         <div className="absolute left-1/2 bottom-5 z-0 h-40 w-40 -translate-x-1/2 rounded-full bg-[#FFD67A]/70" />
@@ -247,11 +307,20 @@ export default function Home() {
 
           <div className="mt-8 grid gap-6 md:grid-cols-2">
             <ProjectCard
+              title="Jung Chance Fine Art Website"
+              date="07/2026"
+              skills="Next.js, TypeScript, Tailwind CSS, React, Sanity CMS, Formspree, Netlify"
+              description="Fine art website for my mother, Jung Chance, to showcase her painting, awards, and galleries."
+              image="/images/project_images/JungChanceWebsite.jpg"
+              link="https://github.com/achance2/JungChanceFineArtWebsite"
+            />
+
+            <ProjectCard
               title="Personal Portfolio Website"
               date="05/2026"
               skills="Next.js, TypeScript, Tailwind CSS, Framer Motion, Vercel"
               description="Built a website to showcase my projects and experience!"
-              image="/images/project_images/website.jpg"
+              image="/images/project_images/websiteportfolio2.jpg"
               link="https://github.com/achance2/AidanChancePersonalWebsite"
             />
 
