@@ -95,7 +95,7 @@ export default function Home() {
       <section className="relative min-h-screen overflow-hidden bg-[#FFFBE3]" id="about">
         <div className="absolute inset-x-0 top-0 h-400 bg-gradient-to-b from-[#56bcd2] to-[#FFFBE3]" />
 
-        <div className="relative z-10 mx-auto grid max-w-6xl grid-cols-1 items-center gap-10 px-6 py-12 md:grid-cols-2 md:gap-16 md:px-12 md:py-24">          
+        <div className="relative z-10 mx-auto grid w-full max-w-6xl grid-cols-1 items-center gap-10 px-6 py-16 md:grid-cols-2 md:gap-16 md:px-12 md:py-24">          
           <motion.div
             animate={{ rotate: 360 }}
             transition={{
