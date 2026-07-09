@@ -6,6 +6,7 @@ import { motion } from "motion/react";
 import { animate, scroll } from "motion";
 import { useEffect, useRef } from "react";
 import ProjectCard from "@/components/projectcard";
+import MobileAboutCollage from "@/components/mobilecollage";
 
 export default function Home() {
 
@@ -153,8 +154,10 @@ export default function Home() {
         >
           <Image src="/images/home_images/airplane.svg" alt="Airplane" width={100} height={100} />
         </motion.div>
-        
-        <div className="relative mx-auto h-[2190px] w-full max-w-[1400px]">
+
+        <MobileAboutCollage />
+
+        <div className="relative mx-auto hidden h-[2190px] w-full max-w-[1400px] md:block">
           <ScrollProgressReveal className="absolute -left-10 top-60 h-[1000px] w-[450px]">
             <video
               src="/videos/bouldering.mp4"
