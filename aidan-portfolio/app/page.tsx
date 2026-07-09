@@ -92,11 +92,10 @@ export default function Home() {
         <div className="pointer-events-none absolute bottom-0 left-0 z-10 h-60 w-full bg-gradient-to-b from-transparent to-[#56bcd2]" />
       </section>
 
-      <section className="relative min-h-screen overflow-hidden bg-[#FFFBE3]" id = "about">
+      <section className="relative min-h-screen overflow-hidden bg-[#FFFBE3]" id="about">
         <div className="absolute inset-x-0 top-0 h-400 bg-gradient-to-b from-[#56bcd2] to-[#FFFBE3]" />
 
-        <div className="relative z-10 mx-auto grid max-w-6xl grid-cols-2 items-center gap-16 px-12 py-24">
-
+        <div className="relative z-10 mx-auto grid max-w-6xl grid-cols-1 items-center gap-10 px-6 py-16 md:grid-cols-2 md:gap-16 md:px-12 md:py-24">
           <motion.div
             animate={{ rotate: 360 }}
             transition={{
@@ -104,40 +103,41 @@ export default function Home() {
               repeat: Infinity,
               ease: "linear",
             }}
-            className="absolute -right-30 top-10 z-20"
+            className="absolute right-4 top-6 z-20 md:-right-30 md:top-10"
           >
             <Image
               src="/images/home_images/sun.svg"
               alt="sun"
               width={120}
               height={120}
+              className="w-20 md:w-[120px]"
             />
           </motion.div>
 
-          <div className="justify-self-start">
+          <div className="flex justify-center md:justify-self-start">
             <ScrollProgressReveal>
               <Image
                 src="/images/home_images/Aidan5.JPG"
                 alt="Aidan Chance"
                 width={500}
                 height={600}
-                className="rounded-3xl border-4 border-white/80 object-cover shadow-2xl transition duration-300 hover:-translate-y-2 hover:scale-105 hover:rotate-1"
+                className="w-full max-w-[380px] rounded-3xl border-4 border-white/80 object-cover shadow-2xl transition duration-300 hover:-translate-y-2 hover:scale-105 hover:rotate-1 md:max-w-[500px]"
               />
             </ScrollProgressReveal>
           </div>
 
-          <div className="max-w-xl">
-            <h2 className="text-4xl font-extrabold leading-tight text-white">
+          <div className="max-w-xl text-center md:text-left">
+            <h2 className="text-3xl font-extrabold leading-tight text-white md:text-4xl">
               Welcome to my Website!
             </h2>
 
-            <p className="mt-6 text-xl leading-8 text-[#24535a]/80 font-bold">
+            <p className="mt-6 text-lg font-bold leading-8 text-[#24535a]/80 md:text-xl">
               My Name is Aidan! I'm a junior at Texas A&M University pursuing a B.S. in Interdisciplinary Engineering with a
               focus in Computer Science and Biomedical Engineering.
             </p>
 
-            <p className="mt-6 text-xl leading-8 text-[#24535a]/80 font-bold">
-              Currently seeking internship opportunities in software development, data analysis, and research & development roles. Please feel free to contact me using the links at the top. Let's stay in touch!
+            <p className="mt-6 text-lg font-bold leading-8 text-[#24535a]/80 md:text-xl">
+              Currently seeking internship opportunities in software development, data analysis, and research & development roles. Please feel free to contact me using the links at the top. Let&apos;s stay in touch!
             </p>
           </div>
         </div>
