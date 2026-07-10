@@ -313,7 +313,7 @@ export default function Home() {
               title="Jung Chance Fine Art Website"
               date="07/2026"
               skills="Next.js, TypeScript, Tailwind CSS, React, Sanity CMS, Formspree, Netlify"
-              description="A responsive fine art portfolio website for my mother, Jung Chance, designed to showcase paintings, awards, galleries, and upcoming events. Built with Sanity CMS to allow artwork and event content to be updated dynamically, Formspree for secure contact submissions, and Netlify for deployment."
+              description="An interactive fine art portfolio website for my mother, Jung Chance, designed to showcase paintings, awards, galleries, and upcoming events. Built with Sanity CMS to allow artwork and event content to be updated dynamically, Formspree for secure contact submissions, and Netlify for deployment."
               image="/images/project_images/JungChanceWebsite.jpg"
               link="https://github.com/achance2/JungChanceFineArtWebsite"
             />
@@ -322,7 +322,7 @@ export default function Home() {
               title="Personal Portfolio Website"
               date="05/2026"
               skills="Next.js, TypeScript, Tailwind CSS, Framer Motion, Vercel, Spline"
-              description="An interactive personal portfolio website built to present my research, software projects, leadership experience, and technical background in an interactive website. Features animated page sections with Framer Motion, embedded 3D visuals using Spline, and deployed on Vercel."
+              description="An interactive personal portfolio website built to present my research, software projects, leadership experience, and technical background in a responsive website. Features animated page sections with Framer Motion, embedded 3D visuals using Spline, and deployed on Vercel."
               image="/images/project_images/websiteportfolio2.jpg"
               link="https://github.com/achance2/AidanChancePersonalWebsite"
             />
@@ -331,7 +331,7 @@ export default function Home() {
               title="Accelerating the Discovery of Novel Metastable Photoacids"
               date="05/2025 - Present"
               skills="Python, RDKit, SMARTS, High Performance Computing, Computational Chemistry"
-              description="A computational chemistry pipeline for discovering novel metastable photoacid candidates from large molecular libraries. Utilizes RDKit and SMARTS-based structural screening to filter over 1 billion molecules, generate candidate isomers, analyze relative energies, and prioritize molecules for downstream analysis on high-performance computing clusters such as the NVIDIA VISION supercomputer."
+              description="A computational chemistry pipeline for discovering novel metastable photoacid candidates from large molecular libraries. Utilizes RDKit and SMARTS-based structural screening to filter 1,000,000,000+ molecules, generate candidate isomers, analyze relative energies, and prioritize candidates for downstream analysis on HPC supercomputers including Texas A&M's Grace and VISION (NVIDIA)."
               image="/images/project_images/molecule.png"
               link="https://github.com/Tabor-Research-Group/metastable-photoacid-molecular-discovery"
             />
