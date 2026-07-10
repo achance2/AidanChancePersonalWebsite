@@ -160,7 +160,7 @@ export default function Home() {
         <div className="relative mx-auto hidden h-[2190px] w-full max-w-[1400px] md:block">
           <ScrollProgressReveal className="absolute -left-10 top-60 h-[1000px] w-[450px]">
             <video
-              src="/videos/bouldering.mp4"
+              src="/videos/bouldering1.mp4"
               autoPlay
               muted
               loop
@@ -175,7 +175,7 @@ export default function Home() {
               <div className="absolute -top-2 left-20 h-8 w-8 rotate-45 bg-[#fffdf2]" />
 
               <p className="relative z-10 text-lg leading-7 text-[#24535a]/80">
-                I started bouldering during my 2024 study abroad trip in Seoul, South Korea. Since then, it has become a way for me to challenge myself both physically and mentally. This video shows me sending a project I've been recently working on.
+                I started bouldering during my 2024 study abroad trip in Seoul, South Korea. This video shows me completing a V5 difficulty route for the first time (they go up to V10). I'm excited to continue improving my skills and tackling my first V6!
               </p>
             </div>
           </div>
@@ -321,7 +321,7 @@ export default function Home() {
             <ProjectCard
               title="Personal Portfolio Website"
               date="05/2026"
-              skills="Next.js, TypeScript, Tailwind CSS, Framer Motion, Vercel"
+              skills="Next.js, TypeScript, Tailwind CSS, Framer Motion, Vercel, Spline"
               description="Built a website to showcase my projects and experience!"
               image="/images/project_images/websiteportfolio2.jpg"
               link="https://github.com/achance2/AidanChancePersonalWebsite"
