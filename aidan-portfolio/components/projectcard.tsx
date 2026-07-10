@@ -30,7 +30,7 @@ export default function ProjectCard({
     <Link href={link} className="block">
       <Card className="bg-black/70 text-white hover:scale-105 transition-transform duration-300 ease-in-out shadow-xl border-2 border-black/50">
         <CardHeader>
-          <div className="flex items-center justify-between gap-4 italic">
+          <div className="flex items-center justify-between gap-4">
             <CardTitle>{title}</CardTitle>
             <p className="shrink-0 text-sm text-white">{date}</p>
           </div>

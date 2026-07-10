@@ -313,7 +313,7 @@ export default function Home() {
               title="Jung Chance Fine Art Website"
               date="07/2026"
               skills="Next.js, TypeScript, Tailwind CSS, React, Sanity CMS, Formspree, Netlify"
-              description="Fine art website for my mother, Jung Chance, to showcase her painting, awards, and galleries."
+              description="A responsive fine art portfolio website for my mother, Jung Chance, designed to showcase paintings, awards, galleries, and upcoming events. Built with Sanity CMS to allow artwork and event content to be updated dynamically, Formspree for secure contact submissions, and Netlify for deployment."
               image="/images/project_images/JungChanceWebsite.jpg"
               link="https://github.com/achance2/JungChanceFineArtWebsite"
             />
@@ -322,7 +322,7 @@ export default function Home() {
               title="Personal Portfolio Website"
               date="05/2026"
               skills="Next.js, TypeScript, Tailwind CSS, Framer Motion, Vercel, Spline"
-              description="Built a website to showcase my projects and experience!"
+              description="An interactive personal portfolio website built to present my research, software projects, leadership experience, and technical background in an interactive website. Features animated page sections with Framer Motion, embedded 3D visuals using Spline, and deployed on Vercel."
               image="/images/project_images/websiteportfolio2.jpg"
               link="https://github.com/achance2/AidanChancePersonalWebsite"
             />
@@ -331,7 +331,7 @@ export default function Home() {
               title="Accelerating the Discovery of Novel Metastable Photoacids"
               date="05/2025 - Present"
               skills="Python, RDKit, SMARTS, High Performance Computing, Computational Chemistry"
-              description="Built a computational chemistry workflow to screen millions of molecules for photoacid candidates."
+              description="A computational chemistry pipeline for discovering novel metastable photoacid candidates from large molecular libraries. Utilizes RDKit and SMARTS-based structural screening to filter over 1 billion molecules, generate candidate isomers, analyze relative energies, and prioritize molecules for downstream analysis on high-performance computing clusters such as the NVIDIA VISION supercomputer."
               image="/images/project_images/molecule.png"
               link="https://github.com/Tabor-Research-Group/metastable-photoacid-molecular-discovery"
             />
@@ -340,7 +340,7 @@ export default function Home() {
               title="Strive"
               date="10/2025"
               skills="JavaScript, React Native, Node.js, Figma, Firebase"
-              description="Schedule Management App to help students with navigating their classes and assignments."
+              description="A mobile schedule management app designed to help students organize classes, assignments, and deadlines. Built with React Native and Firebase."
               image="/images/project_images/strive.png"
               link="https://github.com/Strive-App/Strive"
             />
