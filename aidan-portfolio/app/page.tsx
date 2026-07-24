@@ -315,7 +315,8 @@ export default function Home() {
               skills="Next.js, TypeScript, Tailwind CSS, React, Sanity CMS, Formspree, Netlify"
               description="An interactive fine art portfolio website for my mother, Jung Chance, designed to showcase paintings, awards, galleries, and upcoming events. Built with Sanity CMS to allow artwork and event content to be updated dynamically, Formspree for secure contact submissions, and Netlify for deployment."
               image="/images/project_images/JungChanceWebsite.jpg"
-              link="https://github.com/achance2/JungChanceFineArtWebsite"
+              githubLink="https://github.com/achance2/JungChanceFineArtWebsite"
+              websiteLink="https://jungchance.netlify.app/"
             />
 
             <ProjectCard
@@ -324,7 +325,8 @@ export default function Home() {
               skills="Next.js, TypeScript, Tailwind CSS, Framer Motion, Vercel, Spline"
               description="An interactive personal portfolio website built to present my research, software projects, leadership experience, and technical background in a responsive website. Features animated page sections with Framer Motion, embedded 3D visuals using Spline, and deployed on Vercel."
               image="/images/project_images/websiteportfolio2.jpg"
-              link="https://github.com/achance2/AidanChancePersonalWebsite"
+              githubLink="https://github.com/achance2/AidanChancePersonalWebsite"
+              websiteLink="https://aidan-chance-personal-website.vercel.app/"
             />
 
             <ProjectCard
@@ -333,7 +335,7 @@ export default function Home() {
               skills="Python, RDKit, SMARTS, High Performance Computing, Computational Chemistry"
               description="A computational chemistry pipeline for discovering novel metastable photoacid candidates from large molecular libraries. Utilizes RDKit and SMARTS-based structural screening to filter 1,000,000,000+ molecules, generate candidate isomers, analyze relative energies, and prioritize candidates for downstream analysis on HPC supercomputers including Texas A&M's Grace and VISION (NVIDIA)."
               image="/images/project_images/molecule.png"
-              link="https://github.com/Tabor-Research-Group/metastable-photoacid-molecular-discovery"
+              githubLink="https://github.com/Tabor-Research-Group/metastable-photoacid-molecular-discovery"
             />
 
             <ProjectCard
@@ -342,7 +344,7 @@ export default function Home() {
               skills="JavaScript, React Native, Node.js, Figma, Firebase"
               description="A mobile schedule management app designed to help students organize classes, assignments, and deadlines. Built with React Native and Firebase."
               image="/images/project_images/strive.png"
-              link="https://github.com/Strive-App/Strive"
+              githubLink="https://github.com/Strive-App/Strive"
             />
           </div>
         </div>

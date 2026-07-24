@@ -15,7 +15,8 @@ type ProjectCardProps = {
   skills: string;
   description: string;
   image: string;
-  link: string;
+  githubLink: string;
+  websiteLink?: string;
 };
 
 export default function ProjectCard({
@@ -24,36 +25,67 @@ export default function ProjectCard({
   skills,
   description,
   image,
-  link,
+  githubLink,
+  websiteLink,
 }: ProjectCardProps) {
   return (
-    <Link href={link} className="block">
-      <Card className="bg-black/70 text-white hover:scale-105 transition-transform duration-300 ease-in-out shadow-xl border-2 border-black/50">
-        <CardHeader>
-          <div className="flex items-center justify-between gap-4">
-            <CardTitle>{title}</CardTitle>
-            <p className="shrink-0 text-sm text-white">{date}</p>
-          </div>
+    <Card className="relative border-2 border-black/40 bg-black/70 text-white shadow-xl">
+      <CardHeader>
+        <div className="flex items-center justify-between gap-4">
+          <CardTitle>{title}</CardTitle>
+          <p className="shrink-0 text-sm text-white">{date}</p>
+        </div>
 
-          <CardDescription className="text-white italic">
-            {skills}
-          </CardDescription>
-        </CardHeader>
+        <CardDescription className="italic text-white">
+          {skills}
+        </CardDescription>
+      </CardHeader>
 
-        <CardContent className="relative min-h-50">
-          <div className="flex items-center gap-6">
-            <p className="pr-52 text-white">{description}</p>
+      <CardContent className="relative min-h-50 pb-16">
+        <p className="pr-52 text-white">{description}</p>
 
+        <Image
+          src={image}
+          alt={title}
+          width={200}
+          height={300}
+          className="absolute right-6 top-0 h-50 w-48 rounded-lg object-cover"
+        />
+      </CardContent>
+
+      <div className="absolute bottom-5 left-5 z-20 flex items-center gap-3">
+        <Link
+          href={githubLink}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label={`View ${title} on GitHub`}
+        >
+          <Image
+            src="/images/home_images/github.svg"
+            alt="GitHub"
+            width={28}
+            height={28}
+            className="brightness-0 invert transition-transform duration-200 hover:scale-110"
+          />
+        </Link>
+
+        {websiteLink && (
+          <Link
+            href={websiteLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label={`Visit ${title} website`}
+          >
             <Image
-              src={image}
-              alt={title}
-              width={200}
-              height={300}
-              className="rounded absolute right-6 top-0 h-50 w-48rounded-lg object-cover"
+              src="/images/home_images/website2.svg"
+              alt="Website"
+              width={28}
+              height={28}
+              className="brightness-0 invert transition-transform duration-200 hover:scale-110"
             />
-          </div>
-        </CardContent>
-      </Card>
-    </Link>
+          </Link>
+        )}
+      </div>
+    </Card>
   );
 }
