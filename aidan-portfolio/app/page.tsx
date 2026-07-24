@@ -59,18 +59,18 @@ export default function Home() {
         <div className="absolute inset-0 overflow-hidden bg-[#55c0cf]">
           <iframe
             src="https://my.spline.design/watercopycopy-IPtHOMmCDqP39crbu2prbb2B-9qR/"
-            className="pointer-events-none h-full w-full border-0"
+            className="pointer-events-none hidden h-full w-full border-0 xl:block"
             allow="fullscreen"
             loading="lazy"
           />
         </div>
 
-        <div className="absolute left-[10%] top-1/2 z-10 -translate-y-1/2">
-          <h1 className="text-5xl font-extrabold leading-tight text-white drop-shadow-md">
+        <div className="absolute left-1/2 top-1/2 z-10 w-full -translate-x-1/2 -translate-y-1/2 px-6 text-center xl:left-[10%] xl:w-auto xl:translate-x-0 xl:text-left">
+          <h1 className="text-center text-5xl font-extrabold leading-tight text-white drop-shadow-md">
             Nice to meet you!
           </h1>
 
-          <p className="mt-5 flex items-center gap-2 text-lg text-white/80 drop-shadow-md">
+          <p className="mt-5 flex justify-center items-center gap-2 text-lg text-white/80 drop-shadow-md">
             Scroll or click to learn more about me
             <span className="animate-fish text-2xl">🐟</span>
           </p>
@@ -95,7 +95,7 @@ export default function Home() {
       <section className="relative min-h-screen overflow-hidden bg-[#FFFBE3]" id="about">
         <div className="absolute inset-x-0 top-0 h-400 bg-gradient-to-b from-[#56bcd2] to-[#FFFBE3]" />
 
-        <div className="relative z-10 mx-auto grid w-full max-w-6xl grid-cols-1 items-center gap-10 px-6 py-16 md:grid-cols-2 md:gap-16 md:px-12 md:py-24">          
+        <div className="relative z-10 mx-auto grid w-full max-w-6xl grid-cols-1 items-center gap-10 px-6 py-16 md:grid-cols-2 md:gap-16 md:px-12">          
           <motion.div
             animate={{ rotate: 360 }}
             transition={{
@@ -103,14 +103,14 @@ export default function Home() {
               repeat: Infinity,
               ease: "linear",
             }}
-            className="absolute right-4 top-6 z-20 md:-right-30 md:top-10"
+            className="absolute right-4 top-6 z-20 xl:-right-30 xl:top-10"
           >
             <Image
               src="/images/home_images/sun.svg"
               alt="sun"
               width={120}
               height={120}
-              className="w-20 md:w-[120px]"
+              className="w-20 xl:w-[120px]"
             />
           </motion.div>
 
@@ -121,22 +121,22 @@ export default function Home() {
                 alt="Aidan Chance"
                 width={500}
                 height={600}
-                className="w-full max-w-[380px] rounded-3xl border-4 border-white/80 object-cover shadow-2xl transition duration-300 hover:-translate-y-2 hover:scale-105 hover:rotate-1 md:max-w-[500px]"
+                className="w-full max-w-[380px] rounded-3xl border-4 border-white/80 object-cover shadow-2xl transition duration-300 hover:-translate-y-2 hover:scale-105 hover:rotate-1 xl:max-w-[500px]"
               />
             </ScrollProgressReveal>
           </div>
 
-          <div className="max-w-xl text-center md:text-left">
-            <h2 className="text-3xl font-extrabold leading-tight text-white md:text-4xl">
+          <div className="max-w-xl text-center xl:text-left">
+            <h2 className="text-3xl font-extrabold leading-tight text-white xl:text-4xl">
               Welcome to my Website!
             </h2>
 
-            <p className="mt-6 text-lg font-bold leading-8 text-[#24535a]/80 md:text-xl">
+            <p className="mt-6 text-lg font-bold leading-8 text-[#24535a]/80 xl:text-xl">
               My Name is Aidan! I'm a junior at Texas A&M University pursuing a B.S. in Interdisciplinary Engineering with a
               focus in Computer Science and Biomedical Engineering.
             </p>
 
-            <p className="mt-6 text-lg font-bold leading-8 text-[#24535a]/80 md:text-xl">
+            <p className="mt-6 text-lg font-bold leading-8 text-[#24535a]/80 xl:text-xl">
               Currently seeking internship opportunities in software development, data analysis, and research & development roles. Please feel free to contact me using the links at the top. Let&apos;s stay in touch!
             </p>
           </div>
@@ -150,14 +150,14 @@ export default function Home() {
             repeat: Infinity,
             ease: "linear",
           }}
-          className="pointer-events-none absolute top-[760px] left-0 z-20 text-5xl"
+          className="pointer-events-none mt-8 text-5xl"
         >
           <Image src="/images/home_images/airplane.svg" alt="Airplane" width={100} height={100} />
         </motion.div>
 
         <MobileAboutCollage />
 
-        <div className="relative mx-auto hidden h-[2190px] w-full max-w-[1400px] md:block">
+        <div className="relative mx-auto hidden h-[2190px] w-full max-w-[1400px] xl:block">
           <ScrollProgressReveal className="absolute -left-10 top-60 h-[1000px] w-[450px]">
             <video
               src="/videos/bouldering1.mp4"
@@ -284,7 +284,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="relative min-h-[145vh] overflow-hidden bg-[#FFFBE3]" id="projects">
+      <section className="relative min-h-screen overflow-hidden bg-[#FFFBE3]" id="projects">
         <div className="absolute inset-x-0 top-0 z-0 h-400 bg-gradient-to-b from-[#FFFBE3] to-[#EDBBBB]" />
 
         <div className="absolute left-1/2 bottom-5 z-0 h-40 w-40 -translate-x-1/2 rounded-full bg-[#FFD67A]/70" />

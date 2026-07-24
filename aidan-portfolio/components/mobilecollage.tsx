@@ -2,16 +2,16 @@ import Image from "next/image";
 
 export default function MobileAboutCollage() {
   return (
-    <div className="mx-auto flex w-full max-w-md flex-col gap-12 px-6 py-12 md:hidden">
+    <div className="relative z-10 mx-auto flex w-full max-w-xl flex-col gap-12 px-6 py-24 xl:hidden">
       <div>
         <video
-          src="/videos/bouldering.mp4"
+          src="/videos/bouldering1.mp4"
           autoPlay
           muted
           loop
           playsInline
           controls
-          className="w-full rounded-3xl border-2 border-white/80 bg-black object-cover shadow-2xl"
+          className="h-auto w-full rounded-3xl border-2 border-white/80 bg-black object-contain shadow-2xl"
         />
 
         <div className="relative mt-6 rounded-3xl bg-[#fffdf2] p-5 shadow-2xl">
