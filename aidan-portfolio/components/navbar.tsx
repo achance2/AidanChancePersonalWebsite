@@ -6,7 +6,7 @@ import Image from "next/image";
 
 export default function Navbar() {
   return (
-    <div className="absolute left-6 top-6 z-[9999] brightness-0 invert">
+    <div className="absolute left-2 top-2 z-[9999] brightness-0 invert">
       <motion.nav
         initial={{ y: -60, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}

@@ -284,8 +284,8 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="relative min-h-screen overflow-hidden bg-[#FFFBE3]" id="projects">
-        <div className="absolute inset-x-0 top-0 z-0 h-400 bg-gradient-to-b from-[#FFFBE3] to-[#EDBBBB]" />
+      <section className="relative min-h-screen overflow-hidden bg-[#FFFBE3] pb-64" id="projects">
+        <div className="absolute inset-x-0 top-0 z-0 h-1000 md:h-400 bg-gradient-to-b from-[#FFFBE3] to-[#EDBBBB]" />
 
         <div className="absolute left-1/2 bottom-5 z-0 h-40 w-40 -translate-x-1/2 rounded-full bg-[#FFD67A]/70" />
 
