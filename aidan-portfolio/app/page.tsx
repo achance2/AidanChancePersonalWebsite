@@ -313,7 +313,7 @@ export default function Home() {
               title="Jung Chance Fine Art Website"
               date="07/2026"
               skills="Next.js, TypeScript, Tailwind CSS, React, Sanity CMS, Formspree, Netlify"
-              description="An interactive fine art portfolio website for my mother, Jung Chance, designed to showcase paintings, awards, galleries, and upcoming events. Built with Sanity CMS to allow artwork and event content to be updated dynamically, Formspree for secure contact submissions, and Netlify for deployment."
+              description="An interactive fine art portfolio website designed to showcase paintings, awards, galleries, and upcoming events. Built with Sanity CMS to allow artwork and event content to be updated dynamically, Formspree for secure contact submissions, and Netlify for deployment."
               image="/images/project_images/JungChanceWebsite.jpg"
               githubLink="https://github.com/achance2/JungChanceFineArtWebsite"
               websiteLink="https://jungchance.netlify.app/"
