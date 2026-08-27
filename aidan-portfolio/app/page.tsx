@@ -332,8 +332,8 @@ export default function Home() {
             <ProjectCard
               title="Accelerating the Discovery of Novel Metastable Photoacids"
               date="05/2025 - Present"
-              skills="Python, RDKit, SMARTS, High Performance Computing, Computational Chemistry"
-              description="A computational chemistry pipeline for discovering novel metastable photoacid candidates from large molecular libraries. Utilizes RDKit and SMARTS-based structural screening to filter 1,000,000,000+ molecules, generate candidate isomers, analyze relative energies, and prioritize candidates for downstream analysis on HPC supercomputers including Texas A&M's Grace and VISION (NVIDIA)."
+              skills="Python, RDKit, SMARTS, Pandas, Numpy, Linux, High Performance Computing, Computational Chemistry"
+              description="Built a large-scale Python and RDKit pipeline to search 1+ billion molecules for novel metastable photoacid candidates, automating structural filtering, isomer generation, energy analysis, and candidate ranking. Designed the workflow to process large datasets efficiently across Texas A&M’s Grace and VISION HPC systems, combining software engineering, data analysis, and computational chemistry."
               image="/images/project_images/molecule.png"
               githubLink="https://github.com/Tabor-Research-Group/metastable-photoacid-molecular-discovery"
             />
