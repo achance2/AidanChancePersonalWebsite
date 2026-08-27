@@ -16,7 +16,7 @@ export default function Navbar() {
         <NavLink href="/">Home</NavLink>
         <NavLink href="/#about">About Me</NavLink>        
         <NavLink href="/#projects">Projects</NavLink>
-        <NavLink href="/images/resume/Resume16.pdf" target="_blank">Resume</NavLink>
+        <NavLink href="/images/resume/Resume17.pdf" target="_blank">Resume</NavLink>
 
         <IconLink href="https://github.com/achance2">
           <Image
