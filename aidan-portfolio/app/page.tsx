@@ -310,7 +310,7 @@ export default function Home() {
 
           <div className="mt-8 grid gap-6 md:grid-cols-2">
             <ProjectCard
-              title="Jung Chance Fine Art Website"
+              title="Client Fine Art Website"
               date="07/2026"
               skills="Next.js, TypeScript, Tailwind CSS, React, Sanity CMS, Formspree, Netlify"
               description="An interactive fine art portfolio website designed to showcase paintings, awards, galleries, and upcoming events. Built with Sanity CMS to allow artwork and event content to be updated dynamically, Formspree for secure contact submissions, and Netlify for deployment."
